@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculadora</title>
+<link rel="stylesheet" type="text/css" href="css/calcula.css" />
+<script type="text/javascript" src="js/calcula.js"></script>
+</head>
+<body>
+<div class="calculadora">
+    <div class="pantalla">
+        <div id="resultado">
+            <p id="textoPantalla">0</p>
+        </div>
+    </div>
+    <div class="funciones" align="center">
+            <div id="other">
+                <button id="retroceso" onclick="retro()">Retr</button>
+                <button id="borradoParcial"  onclick="borradoParcial()">CE</button>
+                <button id="borradoTotal" onclick="borradoTotal()">C</button>
+            </div>
+             <div id="fx">
+              <button id="binario" onclick="bin()">BIN</button>
+              <button id="hexadecimal" onclick="hex()">HEX</button>
+              <button id="octal" onclick="oct()">OCT</button>
+              </div>
+              <div id="angulos">
+                  <button id="seno" onclick="sin()">sin</button>
+                  <button id="coseno" onclick="cos()">cos</button>
+                  <button id="tangente" onclick="tan()">tan</button>
+                  <button id="arcsin" onclick="asin()">asin</button>
+                  <button id="arccos" onclick="acos()">acos</button>
+                  <button id="arctan" onclick="atan()">atan</button>
+              </div>
+              <div id="otherfun">
+                  <button id="euler" onclick="euler()">e</button>
+                  <button id="log" onclick="log()">log</button>
+                  <button id="log natural" onclick="ln()">ln</button>
+                  <button id="factorial" onclick="factorial()">n!</button>
+                  <button id="cuadrado" onclick="alCuadrado()">x^2</button>
+                  <button id="cubo" onclick="alCubo()">x^3</button>
+              </div>
+          </div>
+    <div class="teclas">
+        <div class="numeros">
+           <div>
+            <button id="n7" onclick="numero('7')">7</button>
+            <button id="n8" onclick="numero('8')">8</button>
+            <button id="n9" onclick="numero('9')">9</button>
+           </div>
+           <div>
+               <button id="n4" onclick="numero('4')">4</button>
+               <button id="n5" onclick="numero('5')">5</button>
+               <button id="n6" onclick="numero('6')">6</button>
+           </div>
+           <div>
+               <button id="n1" onclick="numero('1')">1</button>
+               <button id="n2" onclick="numero('2')">2</button>
+               <button id="n3" onclick="numero('3')">3</button>
+           </div>
+           <div>
+               <button id="opuesto" onclick="opuest()">+/-</button>
+               <button id="cero" onclick="numero('0')">0</button>
+               <button id="punto" onclick="numero('.')">.</button>
+           </div>
+        </div>
+
+    <div class="op">
+        <button id="s" onclick="operar('+')">+</button>
+        <button id="r" onclick="operar('-')">-</button>
+		<button id="d" onclick="operar('/')" >÷</button>
+		<button id="m" onclick="operar('*')">x</button>
+    </div>
+    <div class="op2">
+        <button id="raiz" onclick="raizc()">√</button>
+        <button id="porcentaje" onclick="porcent()">%</button>
+		<button id="inve"  onclick="inve()">1/x</button>
+		<button id="pi" onClick="pi()">π</button>
+    </div>
+    </div>
+    <div class="sr">
+		<button id="sr" onclick="igualar()">=</button>
+	</div>
+</div>
+</body>
+</html>
